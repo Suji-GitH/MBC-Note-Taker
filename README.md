@@ -2,7 +2,7 @@
 
 ## Application & Repository Link
 
-###### [Application Link]()
+###### [Application Link](https://thawing-tundra-80064.herokuapp.com/)
 
 ###### [Repository Link](https://github.com/Suji-GitH/MBC-Note-Taker)
 
@@ -31,21 +31,27 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ###### App Screenshots
 
-Initiate Application
+Landing Page
 <img src = "./assets/Screenshots/initiate.jpg">
 
-Employee Prompts
+Notes Page
 <img src = "./assets/Screenshots/rolePrompts.jpg">
 
-Output html
+Saved Notes
 <img src = "./assets/Screenshots/app.jpg">
 
 ## Credits
 
+- Monash Bootcamp for content included in the public folder
 - npm express
 - node.js
 - Bootstrap
 
-## Testing 
+## Testing
 
-TBA 
+```
+Given the pencil icon button is clicked, text areas will be editable by clicking inside the title and text areas.
+Given that user has inputted text description and title text, Save button appears.
+Given that when user clicks on the save button with correct input, the user input is saved on the left side bar. 
+Given that user selects a note from the side bar, it is displayed on the right hand side panel.
+```
