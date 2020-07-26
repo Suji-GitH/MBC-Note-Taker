@@ -1,4 +1,4 @@
-const notes = require("../db/db.json");
+let notes = require("../db/db.json");
 const fs = require("fs");
 
 module.exports = (app) => {
@@ -11,9 +11,9 @@ module.exports = (app) => {
         const note = req.body;
 
         let maxIdNum = 0;
-        for(let key in notes) {
+        for (let key in notes) {
             let id = notes[key].id;
-            if(id > maxIdNum) {
+            if (id > maxIdNum) {
                 maxIdNum = id;
             }
         }
@@ -33,11 +33,13 @@ module.exports = (app) => {
     });
 
     app.get("/api/notes/:id", (req, res) => {
+        //get selected id
         let selectedNoteId = parseInt(req.params.id);
 
         for (let key in notes) {
             let {id, title, text} = notes[key];
 
+            //return object that matched the id
             if (id === selectedNoteId) {
                 res.json({
                     "id": id,
@@ -48,21 +50,24 @@ module.exports = (app) => {
         }
     });
 
-    app.delete("api/notes/:id", (req, res) =>{
-        let selectedNoteId = parseInt(req.params.id);
-
+    app.delete("/api/notes/:id", (req, res) => {
+        //get selected id
+        var selectedNoteId = parseInt(req.params.id);
+    
+        //Filter to get selected id
         let result = notes.filter(({id}) => id !== selectedNoteId);
         notes = result;
-
-        fs.writeFile("db/db.json", JSON.stringify(notes), err =>{
-            if(err) {
-                return console.log(err)
-            } else
-            console.log("Successfully deleted note from db.json file");
-            res.json(notes);
-        });
+    
+        //rewrite db.json to reflect the changes
+        fs.writeFile("db/db.json", JSON.stringify(notes), err => {
+    
+          if (err) {
+            return console.log(err);
+          }
+        
+          console.log("Successfully deleted note from db.json file.");
+          res.json(notes);
+        
+        }); 
     });
-
-
 };
-

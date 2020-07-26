@@ -1,0 +1,25 @@
+/* Background */
+.background {
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Nav Bar */
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.150) !important;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+/* Jumbotron */
+.container {
+    font-family: 'Playfair Display', serif;
+}
+
+.jumbotron {
+    background-color: rgba(255, 238, 182, 0.486);
+}

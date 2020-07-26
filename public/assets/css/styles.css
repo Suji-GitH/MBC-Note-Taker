@@ -1,7 +1,21 @@
+/* Background */
 html, body {
+  font-family: 'Playfair Display', serif;
+  background-image: url(../img/background.jpeg);
+    background-size: cover;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Nav Bar */
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.150) !important;
+}
+
+.navbar-dark .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
 }
 
 .save-note {
@@ -22,16 +36,21 @@ html, body {
   border: none;
 }
 
+/* Note body */
 .note-textarea {
+  background-color: rgba(255, 238, 182, 0.486);
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
 }
 
+/* Note title */
 .note-title {
+  background-color: rgba(255, 238, 182, 0.486);
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  height: auto;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -49,9 +68,11 @@ html, body {
   padding-left: 0;
 }
 
+/* side bar */
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
+  background-color: rgba(255, 238, 182, 0.486);
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -68,3 +89,13 @@ html, body {
   padding: 20px;
   cursor: pointer;
 }
+
+/* delete icon */
+.fa-trash-alt:before {
+  color: black;
+}
+
+/* remove padding */
+/* .noteBody {
+  padding: none;
+} */
