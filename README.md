@@ -32,13 +32,20 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ###### App Screenshots
 
 Landing Page
-<img src = "./assets/Screenshots/initiate.jpg">
+- Click "Get Started" to begin. 
+<img src = "./public/assets/Screenshots/LandingPage.jpg">
 
 Notes Page
-<img src = "./assets/Screenshots/rolePrompts.jpg">
+- Type in title and content in the allocated areas and click the save icon on top right. 
+<img src = "./public/assets/Screenshots/noteInput.jpg">
 
-Saved Notes
-<img src = "./assets/Screenshots/app.jpg">
+Saved Note
+- Saved items are displayed on the left panel.
+<img src = "./public/assets/Screenshots/saveNotes.jpg">
+
+Delete Note
+- Click on the trash can icon to remove note. 
+<img src = "./public/assets/Screenshots/deleteNotes.jpg">
 
 ## Credits
 
