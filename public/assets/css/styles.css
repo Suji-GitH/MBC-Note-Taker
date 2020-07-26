@@ -40,7 +40,7 @@ html, body {
 .note-textarea {
   background-color: rgba(255, 238, 182, 0.486);
   resize: none;
-  height: calc(100% - 63px);
+  height: calc(100% - 74px);
   padding-top: 15px;
 }
 
@@ -58,7 +58,7 @@ html, body {
 }
 
 .list-container .card {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 104px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -94,8 +94,3 @@ html, body {
 .fa-trash-alt:before {
   color: black;
 }
-
-/* remove padding */
-/* .noteBody {
-  padding: none;
-} */
