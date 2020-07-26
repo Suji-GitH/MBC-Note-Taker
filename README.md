@@ -41,7 +41,7 @@ Notes Page
 
 Saved Note
 - Saved items are displayed on the left panel.
-<img src = "./public/assets/Screenshots/saveNotes.jpg">
+<img src = "./public/assets/Screenshots/savedNotes.jpg">
 
 Delete Note
 - Click on the trash can icon to remove note. 
